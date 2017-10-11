@@ -1,3 +1,4 @@
+import { AuthService } from './../services/auth.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -28,7 +29,8 @@ import { MAssignmentsService } from '../m-assignments/m-assignments.service';
     MDashboardComponent
   ],
   providers: [
-    MAssignmentsService
+    MAssignmentsService,
+    AuthService
   ],
   bootstrap: []
 })
